@@ -1,0 +1,173 @@
+.jarallax {
+    position: relative;
+    z-index: 0;
+}
+.jarallax > .jarallax-img {
+    position: absolute;
+    object-fit: cover;
+    /* support for plugin https://github.com/bfred-it/object-fit-images */
+    font-family: 'object-fit: cover;';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.jarallax  h1 {
+    padding-top: 3.5em;
+    padding-bottom: 3.5em;
+    color: white;
+}
+body{
+    background-color: #eee;
+}
+
+.container-fluid {
+    width: 95%;
+}
+.card {
+    border: 0;
+    margin-bottom: 30px;
+    margin-top: -30px;
+    border-radius: 6px;
+    color: rgba(0,0,0,.87);
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-size: .875rem;
+  }
+
+.card .card-header {
+    /*background: linear-gradient(60deg,#ab47bc,#7b1fa2);
+    box-shadow: 0 5px 20px 0 rgba(0,0,0,.2),0 13px 24px -11px rgba(156,39,176,.6);*/
+    background: linear-gradient(60deg,#416eb5,#1f52a2);
+    box-shadow: 0 5px 20px 0 rgba(0,0,0,.2),0 13px 24px -11px rgba(43, 39, 176, 0.6);
+    color: #fff;
+    border-radius: 3px;
+    padding: 1rem 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: -30px;
+    border: 0;
+   
+  }
+
+  .nav-tabs .nav-item .nav-link.active {
+    background-color: hsla(0,0%,100%,.2);
+    transition: background-color .3s .2s;
+  }
+
+  .nav-tabs .nav-item .nav-link, .nav-tabs .nav-item .nav-link:focus, .nav-tabs .nav-item .nav-link:hover {
+    border: 0 !important;
+    color: #fff !important;
+    font-weight: 500;
+  }
+
+  .nav-tabs .nav-item .nav-link {
+    color: #fff;
+    border: 0;
+    margin: 0;
+    border-radius: 3px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 10px 15px;
+    background-color: transparent;
+    transition: background-color .3s 0s;
+  }
+/**/
+  .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #495057;
+    background-color: #fafafa;
+    border-color: #dee2e6 #dee2e6 #fafafa;
+  }
+
+  .nav-tabs .nav-link {
+    border-bottom: .214rem solid transparent;
+    color: #555;
+  }
+
+  .nav-pills .nav-link, .nav-tabs .nav-link {
+    padding: 1.4286em .8575em;
+    font-size: .875rem;
+    font-weight: 500;
+    border: 0;
+  }
+
+  .nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+  }
+
+  .margen100 {
+      margin-top: 100px;
+  }
+
+  /*  Estilos para la tabla*/
+  .text-primario, a.text-primario:focus, a.text-primario:hover {
+    color: #f96332 !important;
+  }
+ 
+  .page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #f96332;
+    border-color: #f96332;
+  }
+ 
+  .table-responsive {
+    overflow: auto;
+    padding-bottom: 10px;
+  }
+  
+  tbody tr {
+    color: #6f4724;
+ }
+ 
+ /* Estilos para el footer*/
+ footer {
+    display: block;
+    padding-bottom: 30px;
+  }
+ 
+  .footer nav {
+    display: inline-block;
+    /*float: left;*/
+    padding-left: 7px;
+  }
+ 
+  .footer ul {
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+  }
+ 
+  .footer ul li {
+    display: inline-block;
+  }
+ 
+  .footer ul li a {
+    color: inherit;
+    padding: .5rem;
+    font-size: .8571em;
+    text-transform: uppercase;
+  }
+ 
+  .footer ul li a, .footer ul li a:hover {
+    text-decoration: none;
+  }
+ 
+  .footer .copyright {
+    font-size: .8571em;
+    line-height: 1.8;
+  }
+ 
+  .footer .copyright {
+    float: right;
+    padding-right: 15px;
+  }

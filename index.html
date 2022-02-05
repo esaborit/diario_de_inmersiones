@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="#">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="assets/css/misestilos.css">
+
+    <title>Diario de inmersiones</title>
+  </head>
+  <body>
+   
+
+    <!-- Background Image Parallax -->
+    <div class="jarallax" data-jarallax data-speed="0.2">
+      <img class="jarallax-img" src="assets/img/diario.jpg" alt="">
+      <div class="container-fluid">          
+          <div class="row">          
+            <div class="col-md-8 mx-auto text-center">
+              <h1>Diario de inmersiones</h1>
+            </div>
+          </div>
+      
+      </div>
+
+
+     
+    </div>
+    <div class="container-fluid">
+
+      <div class="card text-center">
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item" style="list-style-type: none;">
+              <a class="nav-link active" data-bs-toggle="tab" href="#tab1">POr profundidad</a>
+            </li>
+            <li class="nav-item" style="list-style-type: none;">
+              <a class="nav-link" data-bs-toggle="tab" href="#tab2">Por lugares</a>
+            </li>
+            <li class="nav-item" style="list-style-type: none;">
+              <a class="nav-link" data-bs-toggle="tab" href="#tab3">Por años</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-body">
+          <!--<h4 class="card-title">This is a title for tab 1</h4>
+          <p class="card-text">This card uses navigation with default navigation components.</p>
+          <a href="#" class="btn btn-primary">Button</a>-->
+          <div class="tab-content">
+                <div class="tab-pane fade show active" id="tab1">
+                    <h4 class="mt-2">Inmersiones por profundidades</h4>
+                    <p>Gráfica que recoge las inmersiones realizadas cada año agrupándolas por intervalos de profundidad hasta -40m de profundidad.</p>
+                    <canvas id="myChart"></canvas>
+                  </div>
+                <div class="tab-pane fade" id="tab2">
+                    <h4 class="mt-2">Inmersiones por lugares</h4>
+                    <p>Gráfica que resume el numero total de inmersiones realizadas en cada punto de inmersión a lo largo de los años.</p>
+                    <canvas id="mypie"></canvas>
+                 </div>
+                <div class="tab-pane fade" id="tab3">
+                    <h4 class="mt-2">Inmersiones por años</h4>
+                    <p>Gráfica de barras que representa el total de inmersiones realizadas cada anualidad.</p>
+                    <canvas id="misbarras"></canvas>
+                </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="margen100"></div>
+
+      <div class="row">
+        <div class="card text-center">
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs">
+              <!--<li class="nav-item" style="list-style-type: none;">
+                <a class="nav-link active" data-bs-toggle="tab" href="#tab1">POr profundidad</a>
+              </li>
+              <li class="nav-item" style="list-style-type: none;">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab2">Por lugares</a>
+              </li>-->
+              <li class="nav-item" style="list-style-type: none;">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab3">Tabla de inmersiones</a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <!--<h4 class="card-title">This is a title for tab 1</h4>
+            <p class="card-text">This card uses navigation with default navigation components.</p>
+            <a href="#" class="btn btn-primary">Button</a>-->
+            <div class="tab-content">
+                  <div class="tab-pane fade show active" id="tab1">
+                      <h4 class="mt-2"> Resumen de inmersiones</h4>
+                      <p> Tabla con los principales parámetros recogidos durante algunas de mis inmersiones.</p>
+                      <div class="table-responsive">
+                        <table id="tabla" class="display table table-striped table-sm" style="width:100%">
+                            <thead class=" text-primario">
+                                <tr>
+                                   <th>Nº</th>
+                                   <th>Lugar</th>
+                                   <th>Fecha</th>
+                                   <th>Prof.</th>
+                                   <th>Tiempo</th>
+                                   <th>%O2</th>
+                                   <th>Tª</th>
+                                   <th>Inicio</th>
+                                   <th>Fin</th>
+                                   <th>Int sup</th>
+                                   <th>CNS o2</th>
+                                   <th>Prof. media</th>
+                                   <th>Cons. Bares</th>
+                                   <th>Botella</th>
+                                   <th>Cons. litros</th>
+                                   <th>l/min</th>
+                                   <th>Observaciones</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                      
+                  </div>
+                  <!--<div class="tab-pane fade" id="tab2">
+                      <h4 class="mt-2">Inmersiones por lugares</h4>
+                      <p>Gráfica que resume el numero total de inmersiones realizadas en cada punto de inmersión a lo largo de los años.</p>
+                      
+                  </div>
+                  <div class="tab-pane fade" id="tab3">
+                      <h4 class="mt-2">Inmersiones por años</h4>
+                      <p>Gráfica de barras que representa el total de inmersiones realizadas cada anualidad.</p>
+                      
+                  </div>-->
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <footer class="footer">
+        <div class=" container-fluid ">
+            <nav>
+                <ul>
+                    <li><a href="#">Página principal</a></li>
+                    <li><a href="#">Sobre mi</a></li>
+                    <li><a href="https://esaborit.github.io">Blog</a></li>
+                </ul>
+            </nav>
+            <div class="copyright" id="copyright">
+                © 2021 - <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>, Diseñado y codificado por <a href="#" target="_blank">ESC</a>.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>  
+    
+    <!-- Con el siguiente jquery no funciona la tabla cargada con ajax, por eso uso el superior-->
+    <!--<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>-->
+    
+    
+    <!-- Bootstrap 5 Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    
+    <!-- Jarallax -->
+    <script src="https://unpkg.com/jarallax@1/dist/jarallax.min.js"></script>
+
+    <!-- Include it if you want to use Video parallax -->
+    <script src="https://unpkg.com/jarallax@1/dist/jarallax-video.min.js"></script>
+
+    <!-- Para representar las gráficas -->
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+    <script src="assets/js/index9.js"></script>
+
+    <!-- Para la tabla con ajax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+            $('#tabla').DataTable( {
+                "ajax": '../assets/ajax/data/buceo.txt'
+            } );
+        } );
+    </script>
+
+  </body>
+</html>

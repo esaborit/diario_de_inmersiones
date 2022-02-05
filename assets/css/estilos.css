@@ -1,0 +1,183 @@
+body {
+   color: #2c2c2c;
+   font-size: 14px;
+   font-family: Montserrat,Helvetica Neue,Arial,sans-serif;
+ }
+
+.body-color{
+   background-color:  hsl(206, 74%, 40%) ;
+}
+
+.panel-principal{
+   position: relative;
+    float: right;
+    /*width: calc(100% - 20px);*/
+    background-color: #e3e3e3;
+    background-color: #ebecf1;
+    transition: all .5s cubic-bezier(.685,.0473,.346,1);
+    
+}
+
+.panelcabecera-lg{
+   height: 380px;
+}
+
+.panelcabecera {
+   height: 260px;
+   padding-top: 80px;
+   padding-bottom: 45px;
+   background: #141e30;
+   background: linear-gradient(90deg,#0c2646 0,#204065 60%,#2a5788);
+   background-image: url("../img/diario.jpg");
+   position: relative;
+   overflow: hidden;
+   color: white;
+}
+
+.bg-image-full {
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+}
+
+.panelcabecera h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.panel-principal>.contenido{
+   padding: 0 30px 30px;
+   min-height: calc(100vh - 123px);
+   margin-top: -30px;
+}
+
+.footer{
+   padding: 24px 0;
+   background-color: #ebecf1;
+}
+
+.card {
+   border: 0;
+   border-radius: .1875rem;
+   display: inline-block;
+   position: relative;
+   width: 100%;
+   margin-bottom: 20px;
+   box-shadow: 0 1px 15px 1px rgba(39,39,39,.1);
+   min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+ }
+
+ .card .card-header {
+   padding: 15px 15px 0;
+   border: 0;
+ }
+
+ .card .card-header:not([data-background-color]) {
+   background-color: transparent;
+ }
+
+ .card-chart .card-header .card-category {
+   margin-bottom: 5px;
+ }
+
+ .card .card-header .card-title {
+   margin-top: 10px;
+ }
+
+ .card-chart .card-header .card-title {
+   margin-top: 10px;
+   margin-bottom: 0;
+ }
+
+ .card-category, .category {
+   text-transform: capitalize;
+   font-weight: 400;
+   color: #9a9a9a;
+   font-size: .7142em;
+ }
+
+ .card-category {
+   font-size: 1em;
+ }
+
+ .card-title {
+   margin-bottom: .75rem;
+ }
+
+ .card .card-body {
+   padding: 15px 15px 10px;
+ }
+
+ .card .card-footer {
+   background-color: transparent;
+   border: 0;
+ }
+
+ .card-chart .card-footer {
+   margin-top: 15px;
+ }
+
+ .text-primario, a.text-primario:focus, a.text-primario:hover {
+   color: #f96332 !important;
+ }
+
+ .page-item.active .page-link {
+   z-index: 1;
+   color: #fff;
+   background-color: #f96332;
+   border-color: #f96332;
+ }
+
+ .table-responsive {
+   overflow: auto;
+   padding-bottom: 10px;
+ }
+ 
+ tbody tr {
+   color: #6f4724;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+   display: block;
+ }
+
+ .footer nav {
+   display: inline-block;
+   /*float: left;*/
+   padding-left: 7px;
+ }
+
+ .footer ul {
+   margin-bottom: 0;
+   padding: 0;
+   list-style: none;
+ }
+
+ .footer ul li {
+   display: inline-block;
+ }
+
+ .footer ul li a {
+   color: inherit;
+   padding: .5rem;
+   font-size: .8571em;
+   text-transform: uppercase;
+ }
+
+ .footer ul li a, .footer ul li a:hover {
+   text-decoration: none;
+ }
+
+ .footer .copyright {
+   font-size: .8571em;
+   line-height: 1.8;
+ }
+
+ .footer .copyright {
+   float: right;
+   padding-right: 15px;
+ }
