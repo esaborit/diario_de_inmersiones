@@ -1,6 +1,6 @@
 $(function () {
     var data = {
-    labels: ["2003", "2004", "2005", "2006", "2007", "2008", "2009"],
+    labels: ["2003", "2004", "2005", "2006", "2007", "2008", "2009", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021"],
     datasets: [
         {
             label: "-10m",
@@ -11,7 +11,7 @@ $(function () {
             pointStrokeColor: "#fff",
             pointHighlightFill: "#fff",
             pointHighlightStroke: "rgba(220,220,220,1)",
-            data: [7, 9, 3, 3, 19, 7, 12]
+            data: [7, 9, 3, 3, 19, 7, 12, 5, 0, 5, 3, 4, 0, 1, 3, 0, 0]
         },
         {
             label: "-20m",
@@ -22,7 +22,7 @@ $(function () {
             pointStrokeColor: "#fff",
             pointHighlightFill: "#fff",
             pointHighlightStroke: "rgba(220,220,220,1)",
-            data: [9, 20, 52, 35, 15, 16, 18]
+            data: [9, 20, 52, 35, 15, 16, 18, 15, 13, 5, 4, 4, 6, 3, 6, 3, 2]
         },
         {
             label: "-30m",
@@ -33,7 +33,7 @@ $(function () {
             pointStrokeColor: "#fff",
             pointHighlightFill: "#fff",
             pointHighlightStroke: "rgba(220,220,220,1)",
-            data: [8, 9, 5, 7, 0, 7, 4]
+            data: [8, 9, 5, 7, 0, 7, 4, 3, 0, 0, 4, 1, 0, 1, 1, 1, 0]
         },
         {
             label: "-40m",
@@ -44,7 +44,7 @@ $(function () {
             pointStrokeColor: "#fff",
             pointHighlightFill: "#fff",
             pointHighlightStroke: "rgba(204,169,151,1)",
-            data: [0, 2, 4, 11, 0, 2, 1]
+            data: [0, 2, 4, 11, 0, 2, 1, 1, 0, 0, 4, 0, 2, 0, 0, 0, 0]
         }
         ]
     };
@@ -159,7 +159,7 @@ var myPieChart = new Chart("mypie",{
 
 var data3 = {
   datasets: [{
-      data: [ 24, 40, 63, 71, 34, 32, 35, 28, 9, 24, 13, 10, 15, 9, 8, 5, 6],
+      data: [ 24, 40, 63, 71, 34, 32, 35, 28, 9, 24, 13, 10, 15, 9, 8, 5, 10, 4, 2],
       backgroundColor: [
           'rgba(255, 99, 132, 0.5)',
           'rgba(255, 159, 64, 0.5)',
@@ -203,7 +203,9 @@ var data3 = {
       '2016',
       '2017',
       '2018',
-      '2019'
+      '2019',
+      '2020',
+      '2021'
   ]
 };
 
